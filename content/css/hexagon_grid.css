@@ -51,6 +51,21 @@
     transition: var(--hex-transition);
     width: var(--hex-width);
   }
+
+  .hexagon > h1,
+  .hexagon > h2 {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    transition: var(--hex-transition);
+  }
+  .hexagon:hover > h1,
+  .hexagon:hover > h2 {
+    opacity: 1;
+    height: auto;
+    width: auto;
+  }
   
   .hexagon::after,
   .hexagon::before {
@@ -75,6 +90,7 @@
   .hexagon:hover {
     background-color: var(--color-hex-hover);
   }
+
   .hexagon:hover::after,
   .hexagon:hover::before {
     border-top-color: var(--color-hex-hover);
@@ -94,6 +110,9 @@
     height: 75%;
     transition: var(--hex-transition);
   }
+  .hexagon:hover > svg {
+    display: none;
+  }
   
   /* Colors */
   .color-sass {
@@ -106,6 +125,9 @@
   }
   .color-sass:hover {
     fill: var(--color-sass);
+  }
+  .sass-text {
+    color: var(--color-sass);
   }
   
   .color-angular {
