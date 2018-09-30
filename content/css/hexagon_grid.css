@@ -53,7 +53,10 @@
   }
 
   .hexagon > h1,
-  .hexagon > h2 {
+  .hexagon > h2,
+  .hexagon > h3,
+  .hexagon > h4,
+  .hexagon > h5 {
     opacity: 0;
     height: 0;
     width: 0;
@@ -61,7 +64,10 @@
     transition: var(--hex-transition);
   }
   .hexagon:hover > h1,
-  .hexagon:hover > h2 {
+  .hexagon:hover > h2,
+  .hexagon:hover > h3,
+  .hexagon:hover > h4,
+  .hexagon:hover > h5 {
     opacity: 1;
     height: auto;
     width: auto;
