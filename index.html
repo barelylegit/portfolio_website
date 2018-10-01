@@ -48,14 +48,14 @@
         </div>
     </div>
 
-    <section id="about">
-        <div class="container" style="margin-bottom: 50px;">
-            <div class="row d-flex align-items-center justify-content-center flex-column" style="margin-top:50px;">
+    <section id="about" style="padding: 100px 0;">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-center flex-column">
                 <h1>About</h1>
                 <div class="header-bar"></div>
             </div>
 
-            <div class="row d-flex justify-content-around align-items-start text-center" style="margin: 100px;">
+            <div class="row d-flex justify-content-around align-items-start text-center" style="margin: 100px 0;">
                 <div class="col-md-4 d-flex align-items-center justify-content-center flex-column">
                     <div class="hex-wrapper">
                         <div class="hex">
@@ -161,11 +161,23 @@
         </div>
     </section>
     
-    <section id="portfolio">
+    <section id="portfolio" style="padding: 100px 0; background-color:gray;">
         <div class="container">
-            <div class="d-flex justify-content-center align-items-center flex-column">
+            <div class="row d-flex justify-content-center align-items-center flex-column" style="margin-bottom: 100px;">
                 <h1>Portfolio</h1>
                 <div class="header-bar"></div>
+            </div>
+
+            <div class="row">
+                <div class="content">
+                    <div class="content-overlay"></div>
+                    <img class="content-image" src="content/img/myCTL/myCTL_slideshow1_home.png">
+                    <div class="content-details fadeIn-top">
+                    <h3>myCTL</h3>
+                    <p>.Net</p>
+                    <button class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">Learn More</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -176,5 +188,26 @@
             <div class="header-bar"></div>
         </div>
     </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+    </div>
 </body>
 </html>
