@@ -147,3 +147,10 @@
   .fadeIn-top{
     top: 20%;
   }
+
+
+  .carousel-inner .carousel-item {
+    transition: -webkit-transform 2s ease;
+    transition: transform 2s ease;
+    transition: transform 2s ease, -webkit-transform 2s ease;
+  }
