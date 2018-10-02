@@ -173,3 +173,8 @@ top: 20%;
     height:40px;
     fill: gray;
 }
+
+.footer-icon {
+    color: lightgrey;
+    padding: 0 10px;
+}
