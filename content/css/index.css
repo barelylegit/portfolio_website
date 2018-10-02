@@ -1,11 +1,52 @@
+:root {
+    --color-background-default: #272a2a;
+    --color-black:              #282c2c;
+    --color-grey-dark:          #484c4e;
+    --color-red:                #b05f5f;
+    --color-green:              #88aa55;
+    --color-yellow:             #ccb05f;
+    --color-blue:               #556973;
+    --color-grey:               #80807e;
+    --color-cyan:               #558888;
+    --color-white:              #eaeaed;
+    --color-white-bold:         #f6f7f8;
+}
+
 .foreground-text {
-    color: #eaeaed !important;
+    color: var(--color-white-bold)!important;
+}
+
+#home {
+    height: calc(100vh);
+    background-color: var(--color-background-default);
+}
+
+#about {
+    padding: 100px 0;
+}
+
+#portfolio {
+    padding: 100px 0;
+    background-color: lightgray;
+}
+
+#contact {
+    padding: 50px 0 100px 0;
+}
+
+footer {
+    background-color: var(--color-grey-dark);
+    padding: 50px 0;
 }
 
 .header-bar {
     width: 70px;
     height: 4px;
-    background: #272a2a;
+    background: var(--color-background-default);
+}
+
+.icon-white {
+    color: var(--color-white-bold);
 }
 
 .hex-wrapper {
@@ -18,7 +59,7 @@
 }
 
 .hex {
-    background-color: aqua;
+    background-color: var(--color-cyan);
     height: 100%;
     width: calc(100% * 0.57735);
     display: inline-block;
@@ -89,7 +130,7 @@ overflow: hidden;
 }
 
 .content .content-overlay {
-background: rgba(0,0,0,0.7);
+background: rgba(0,0,0,0.9);
 position: absolute;
 height: 100%;
 width: 100%;
@@ -171,7 +212,7 @@ top: 20%;
     top:100%;
     width:100%;
     height:40px;
-    fill: gray;
+    fill: lightgray;
 }
 
 .footer-icon {
