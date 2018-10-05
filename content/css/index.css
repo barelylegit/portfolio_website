@@ -102,6 +102,10 @@ footer {
     z-index: 1;
 }
 
+.hex-info p {
+    padding: 0 20px;
+}
+
 
 
 

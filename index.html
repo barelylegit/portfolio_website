@@ -107,24 +107,38 @@
 
             // Animations on scroll into view
             $(window).scroll(function() {
-                $('.scroll-fadeLeft').each(function() {
-                    if (isScrolledIntoView(this)) {
-                        $(this).addClass('fadeInLeft');
-                    }
-                })
-
                 $('.scroll-fadeIn').each(function() {
                     if (isScrolledIntoView(this)) {
                         $(this).addClass('fadeIn');
                     }
                 })
 
+                $('.scroll-fadeInLeft').each(function() {
+                    if (isScrolledIntoView(this)) {
+                        $(this).addClass('fadeInLeft');
+                    }
+                })
+
+                $('.scroll-fadeInRight').each(function() {
+                    if (isScrolledIntoView(this)) {
+                        $(this).addClass('fadeInRight');
+                    }
+                })
+
+                $('.scroll-fadeInUp').each(function() {
+                    if (isScrolledIntoView(this)) {
+                        $(this).addClass('fadeInUp');
+                    }
+                })
+
                 $('.scroll-flipInY').each(function() {
                     if (isScrolledIntoView(this)) {
                         $(this).addClass('flipInY');
-                        $(this).css("opacity", 1); // flipInY won't overide opacity
+                        $(this).css("opacity", 1); // flipIn won't overide opacity
                     }
                 })
+
+                
             })
         });
 
@@ -164,8 +178,8 @@
     <section id="about">
         <div class="container">
             <div class="row d-flex align-items-center justify-content-center flex-column">
-                <h1 class="scroll-fadeLeft animated">About</h1>
-                <div class="header-bar scroll-fadeLeft animated"></div>
+                <h1 class="scroll-fadeInLeft animated">About</h1>
+                <div class="header-bar scroll-fadeInLeft animated"></div>
             </div>
 
             <div class="row d-flex justify-content-around align-items-start text-center" style="margin: 50px 0 100px 0;">
@@ -178,7 +192,7 @@
 
                     <div class="hex-info animated scroll-fadeIn">
                         <h2>Fast</h2>
-                        <p style="padding: 0 20px;">Slow websites produce slow business. Nobody wants a slow business. Speed is a top priority.</p>
+                        <p>Slow websites produce slow business. Nobody wants a slow business. Speed is a top priority.</p>
                     </div>
                 </div>
                 <div class="col-md-4 d-flex align-items-center justify-content-center flex-column text-center">
@@ -190,7 +204,7 @@
 
                     <div class="hex-info animated scroll-fadeIn">
                         <h2>Responsive</h2>
-                        <p style="padding: 0 20px;">We live in an age of technology. Don't restrict your content to just one. All your content available on every device -- hassle free.</p>
+                        <p>We live in an age of technology. Don't restrict your content to just one. All your content available on every device -- hassle free.</p>
                     </div>
                 </div>
                 <div class="col-md-4 d-flex align-items-center justify-content-center flex-column text-center">
@@ -202,7 +216,7 @@
 
                     <div class="hex-info animated scroll-fadeIn">
                         <h2>Intuitive</h2>
-                        <p style="padding: 0 20px;">No one enjoys reading "docs". Don't make it hard on your customers. Easy to use and easy to understand.</p>
+                        <p>No one enjoys reading "docs". Don't make it hard on your customers. Easy to use and easy to understand.</p>
                     </div>
                 </div>
             </div>
@@ -283,12 +297,12 @@
     <section id="portfolio">
         <div class="container">
             <div class="row d-flex justify-content-center align-items-center flex-column" style="margin-bottom: 50px;">
-                <h1 class="animated fadeInLeft">Portfolio</h1>
-                <div class="header-bar animated fadeInLeft"></div>
+                <h1 class="animated scroll-fadeInRight">Portfolio</h1>
+                <div class="header-bar animated scroll-fadeInRight"></div>
             </div>
 
             <div class="row">
-                <div class="content">
+                <div class="content animated scroll-fadeInUp">
                     <div class="content-overlay"></div>
                     <img class="content-image" src="content/img/myCTL/myCTL_slideshow1_home.png">
                     <div class="content-details fadeIn-top">
