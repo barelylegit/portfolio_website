@@ -242,3 +242,8 @@ top: 20%;
     transform: scale(1.1);
     transition: all .2s ease;
 }
+
+.animated {
+    /* Sets the opacity of animated elements to 0. This gets overridden when an animation is added during scrolling */
+    opacity: 0;
+}
