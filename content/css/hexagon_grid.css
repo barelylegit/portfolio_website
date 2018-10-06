@@ -102,16 +102,16 @@
   
   /* Colors */
   .hexagon-color {
-    background-color: var(--color-sass);
+    background-color: var(--color-primary);
   }
   .hexagon-color::after,
   .hexagon-color::before {
-    border-top-color: var(--color-sass);
-    border-bottom-color: var(--color-sass);
+    border-top-color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
   }
   .hexagon-color:hover {
-    fill: var(--color-sass);
+    fill: var(--color-primary);
   }
   .hexagon-text {
-    color: var(--color-sass);
+    color: var(--color-primary);
   }
