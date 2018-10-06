@@ -17,7 +17,7 @@
 }
 
 .hex {
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
     height: 100%;
     width: calc(100% * 0.57735);
     display: inline-block;
