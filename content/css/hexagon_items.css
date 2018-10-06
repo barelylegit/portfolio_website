@@ -1,0 +1,58 @@
+@import "colors.css";
+
+/*************************
+ * CSS for hexagon items across the top of about section
+ *************************/
+.icon-white {
+    color: white;
+}
+
+.hex-wrapper {
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.hex {
+    background-color: var(--color-primary);
+    height: 100%;
+    width: calc(100% * 0.57735);
+    display: inline-block;
+}
+
+.hex::before{
+    position: absolute;
+    top: 0;
+    right: calc((100% / 2) - ((100% * 0.57735) / 2));
+    background-color: inherit;
+    height: inherit;
+    width: inherit;
+    content: '';
+    transform: rotateZ(60deg);
+}
+
+.hex::after{
+    position: absolute;
+    top: 0;
+    right: calc((100% / 2) - ((100% * 0.57735) / 2));
+    background-color: inherit;
+    height: inherit;
+    width: inherit;
+    content: '';
+    transform: rotateZ(-60deg);
+}
+
+.hex > i {
+    position: relative;
+    font-size: 40pt;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.hex-info p {
+    padding: 0 20px;
+}

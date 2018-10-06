@@ -1,0 +1,14 @@
+:root {
+    --color-background: #272a2a;
+    --color-bg-light:   #F0F1F3;
+    --color-white:      #F7F0F5;
+
+    --color-primary:    #0C1B33;
+    --color-secondary:  #0C1B33;
+    --color-tertiary:   #09C7F6;
+
+    --color-sass:        #0C1B33;
+
+    --color-hex-default: #000000;
+    --color-hex-hover:   #FFFFFF;
+}
